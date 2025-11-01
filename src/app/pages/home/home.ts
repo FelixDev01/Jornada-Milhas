@@ -3,11 +3,12 @@ import { Banner } from '../../shared/banner/banner';
 import { Container } from '../../shared/container/container';
 import { CardBusca } from "../../shared/card-busca/card-busca";
 import { CardDepoimento } from '../../shared/card-depoimento/card-depoimento';
+import { FormBusca } from "../../shared/form-busca/form-busca";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [Banner, Container, CardBusca, CardDepoimento],
+  imports: [Banner, Container, CardBusca, CardDepoimento, FormBusca],
   templateUrl: './home.html',
   styleUrls:['./home.scss'],
 })
