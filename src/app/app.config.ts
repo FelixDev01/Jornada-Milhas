@@ -6,7 +6,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-
+import {MatChipsModule} from '@angular/material/chips';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -18,7 +22,12 @@ export const appConfig: ApplicationConfig = {
       MatToolbarModule,
       MatIconModule,
       MatButtonModule,
-      MatButtonToggleModule
+      MatButtonToggleModule,
+      MatChipsModule,
+      MatFormFieldModule,
+      MatInputModule,
+      MatDatepickerModule,
+      MatNativeDateModule
     )
   ]
 };
