@@ -1,7 +1,36 @@
 .app-footer {
-    .mat-toolbar {
+    margin: 0%;
     background-color: black;
     color: white;
     padding: 0 230px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        img {
+           max-width: 100%;
+           max-height: 40px;     
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            &.redes-sociais {
+                li {
+                    text-align: center;
+                }
+            }
+        }
     }
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
 }
