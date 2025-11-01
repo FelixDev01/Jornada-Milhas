@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { Banner } from '../../shared/banner/banner';
 import { Container } from '../../shared/container/container';
 import { CardBusca } from "../../shared/card-busca/card-busca";
+import { CardDepoimento } from '../../shared/card-depoimento/card-depoimento';
 
 @Component({
   selector: 'app-home',
-  imports: [Banner, Container, CardBusca],
+  standalone: true,
+  imports: [Banner, Container, CardBusca, CardDepoimento],
   templateUrl: './home.html',
-  styleUrl: './home.scss',
+  styleUrls:['./home.scss'],
 })
 export class Home {
 
