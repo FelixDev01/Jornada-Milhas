@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ɵEmptyOutletComponent } from "@angular/router";
 
 @Component({
   selector: 'app-container',
-  imports: [],
+  imports: [ɵEmptyOutletComponent],
   templateUrl: './container.html',
   styleUrl: './container.scss',
 })

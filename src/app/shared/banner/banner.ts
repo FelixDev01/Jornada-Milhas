@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class Banner {
   @Input() src: string =''
-  @Input() alt: string ='Banner Jornada'
+  @Input() alt: string =''
 
 }
