@@ -8,13 +8,22 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from "@angular/material/button";
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { Modal } from '../modal/modal';
 
 @Component({
   selector: 'app-form-busca',
-  imports: [Card, MatButtonToggle, MatButtonToggleGroup, MatIcon, MatChipsModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatDatepickerModule, MatNativeDateModule],
+  imports: [Card, MatButtonToggle, MatButtonToggleGroup, MatIcon,
+            MatChipsModule, MatFormFieldModule, MatInputModule, 
+            MatButtonModule, MatDatepickerModule, MatNativeDateModule,
+            MatDialogModule],
   templateUrl: './form-busca.html',
   styleUrl: './form-busca.scss',
 })
 export class FormBusca {
+  constructor(public dialog: MatDialog) {}
 
+  openDialog() {
+    this.dialog.open(Modal)
+  }    
 }
