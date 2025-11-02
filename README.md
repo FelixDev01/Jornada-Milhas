@@ -1,59 +1,91 @@
-# JornadaMilhas
+✈️ Jornada Milhas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+Aplicação desenvolvida para aprendizado sobre Angular e boas práticas de front-end moderno.
+O projeto simula uma plataforma de viagens, com busca de promoções, exibição de depoimentos e banners dinâmicos — tudo estruturado com componentes standalone e Angular Material.
 
-## Development server
+🚀 Tecnologias utilizadas
 
-To start a local development server, run:
+Angular 17+ (com Standalone Components)
 
-```bash
+Angular Material (design system e UI components)
+
+TypeScript
+
+HTML5 / SCSS
+
+Node.js + npm (para ambiente de desenvolvimento)
+
+🧱 Estrutura do projeto
+src/
+├── app/
+│   ├── pages/
+│   │   └── home/              # Página principal
+│   └── shared/
+│       ├── banner/            # Componente de banner principal
+│       ├── banner-rodape/     # Banner inferior (rodapé)
+│       ├── card/              # Card Coringa
+│       ├── card-busca/        # Card de promoções
+│       ├── card-depoimento/   # Card de depoimentos
+│       ├── container/         # Container para organização dos componentes
+│       ├── footer/            # Rodapé
+│       ├── form-busca/        # Form para futuras buscas de viagens
+│       ├── header/            # Cabeçalho
+│       └── modal/             # Modal para filtrar passagens
+├── assets/
+│   └── imagens/
+└── main.ts
+
+⚙️ Como executar localmente
+
+Clone o repositório:
+
+git clone https://github.com/FelixDev01/jornada-milhas.git
+
+
+Instale as dependências:
+
+npm install
+
+
+Inicie o servidor de desenvolvimento:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Acesse no navegador:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+http://localhost:4200/
 
-```bash
-ng generate component component-name
-```
+🧭 Funcionalidades principais
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+✅ Página inicial com banners dinâmicos
+✅ Seção de promoções com cards reutilizáveis
+✅ Exibição de depoimentos de clientes
+✅ Estrutura de componentes standalone
+✅ Design responsivo com Angular Material
 
-```bash
-ng generate --help
-```
+🧩 Comandos úteis
+Ação	Comando
+Criar novo componente	ng generate component nome
+Rodar servidor local	ng serve
+Fazer build de produção	ng build
+Rodar testes unitários	ng test
+💡 Aprendizados
 
-## Building
+Durante o desenvolvimento deste projeto, foram aplicados conceitos fundamentais do ecossistema Angular, como:
 
-To build the project run:
+Organização por componentes reutilizáveis
 
-```bash
-ng build
-```
+Uso de standalone components (sem módulos)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Data binding, diretivas estruturais e de atributo
 
-## Running unit tests
+Estruturação de rotas com o RouterOutlet
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Estilização modular com SCSS
 
-```bash
-ng test
-```
+Integração com Angular Material
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+👨‍💻 Autor
+Felix Eduardo Villanueva Condori
+Projeto desenvolvido para aquisição de experiencia com o Angular e entendendo SCSS
